@@ -1,3 +1,7 @@
+# "This application requires the 'zoxide' command to be installed.
+# Please visit https://github.com/ajeetdsouza/zoxide to install zoxide.
+# ALARM: Make sure you have installed 'zoxide' command 
+
 xcd(){
  dir=$(eza -D1 `pwd` | sort | egrep -i "$1\w+|$1")
  if [[ $1 == ".." ]]; then
