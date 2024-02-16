@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # "This application requires the 'zoxide' command to be installed.
 # Please visit https://github.com/ajeetdsouza/zoxide to install zoxide.
 # ALARM: Make sure you have installed 'zoxide' command 
