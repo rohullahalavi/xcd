@@ -5,7 +5,7 @@
 # ALARM: Make sure you have installed 'zoxide' command 
 
 xcd(){
-if [[ $1 == "b" || $1 == "." ]]; then
+if [[ $1 == "b" || $1 == "." || $1 == "-" ]]; then
   cd "$OLDPWD"
 elif ! [[ $1 == "" ]]; then
   dir=$(eza -D1 `pwd` | sort | egrep -i "$1\w+|$1")
@@ -18,7 +18,7 @@ elif ! [[ $1 == "" ]]; then
     cd $mpath
   fi
 else
-  cd "$HOME/Desktop/"
+  cd "$HOME/"
 fi
 
 }
